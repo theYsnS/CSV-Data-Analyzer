@@ -1,0 +1,21 @@
+id,name,age,salary,department,hire_date,performance_score
+1,Alice Johnson,28,65000,Engineering,2021-03-15,4.2
+2,Bob Smith,35,78000,Engineering,2019-07-22,3.8
+3,Carol Williams,42,92000,Management,2015-01-10,4.5
+4,David Brown,31,71000,Marketing,2020-09-01,3.9
+5,Eve Davis,26,58000,Engineering,2022-06-20,4.1
+6,Frank Miller,38,85000,Sales,2018-04-12,4.0
+7,Grace Wilson,29,62000,Marketing,2021-11-30,3.7
+8,Henry Taylor,45,105000,Management,2014-08-05,4.8
+9,Ivy Anderson,33,73000,Engineering,2019-02-28,4.3
+10,Jack Thomas,27,55000,Sales,2023-01-15,3.5
+11,Kate Martinez,36,81000,Engineering,2017-10-20,4.4
+12,Leo Garcia,41,95000,Management,2016-05-18,4.6
+13,Mia Robinson,30,,Marketing,2020-07-10,3.8
+14,Noah Clark,34,77000,Sales,2018-12-01,4.0
+15,Olivia Lewis,25,52000,Engineering,2023-04-05,
+16,Peter Hall,39,88000,Marketing,2017-03-25,4.2
+17,Quinn Allen,32,69000,Sales,2019-09-14,3.6
+18,Ruby Young,28,64000,Engineering,2021-05-08,4.1
+19,Sam King,44,98000,Management,2015-11-22,4.7
+20,Tina Wright,37,83000,Sales,2018-02-14,3.9

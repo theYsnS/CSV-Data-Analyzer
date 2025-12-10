@@ -119,7 +119,7 @@ def main(args=None):
         # Info only mode
         if args.info:
             info = analyzer.info()
-            print("\n📊 Dataset Information")
+            print("\n Dataset Information")
             print("=" * 40)
             print(f"  Rows: {info['rows']:,}")
             print(f"  Columns: {info['columns']}")
@@ -129,7 +129,7 @@ def main(args=None):
         
         # Show head
         if args.head > 0:
-            print(f"\n📋 First {args.head} rows:")
+            print(f"\n First {args.head} rows:")
             print(analyzer.df.head(args.head).to_string())
             print()
         
@@ -137,18 +137,18 @@ def main(args=None):
         result = analyzer.analyze()
         
         print("\n" + "=" * 50)
-        print("📈 CSV DATA ANALYSIS REPORT")
+        print("CSV DATA ANALYSIS REPORT")
         print("=" * 50)
         
-        print(f"\n📁 File: {filepath.name}")
-        print(f"📊 Shape: {result.shape[0]:,} rows × {result.shape[1]} columns")
-        print(f"💾 Memory: {result.memory_usage:.2f} MB")
-        print(f"🔄 Duplicates: {result.duplicates}")
+        print(f"\n File: {filepath.name}")
+        print(f" Shape: {result.shape[0]:,} rows × {result.shape[1]} columns")
+        print(f" Memory: {result.memory_usage:.2f} MB")
+        print(f" Duplicates: {result.duplicates}")
         
         # Missing values summary
         total_missing = sum(result.missing_values.values())
         if total_missing > 0:
-            print(f"\n⚠️  Missing Values: {total_missing}")
+            print(f"\n Missing Values: {total_missing}")
             for col, count in result.missing_values.items():
                 if count > 0:
                     print(f"   - {col}: {count}")
@@ -156,17 +156,17 @@ def main(args=None):
         # Column-specific stats
         if args.stats:
             if args.stats in result.statistics:
-                print(f"\n📊 Statistics for '{args.stats}':")
+                print(f"\n Statistics for '{args.stats}':")
                 print("-" * 30)
                 for stat, value in result.statistics[args.stats].items():
                     print(f"  {stat:12}: {value:,.4f}")
             else:
-                print(f"\n⚠️  Column '{args.stats}' not found or not numeric")
+                print(f"\n  Column '{args.stats}' not found or not numeric")
                 print(f"   Available numeric columns: {list(result.statistics.keys())}")
         else:
             # Show summary for all numeric columns
             if result.statistics:
-                print("\n📊 Numeric Column Summary:")
+                print("\n Numeric Column Summary:")
                 print("-" * 40)
                 for col, stats in result.statistics.items():
                     print(f"\n  {col}:")
@@ -176,7 +176,7 @@ def main(args=None):
         
         # Correlation matrix
         if args.corr:
-            print("\n🔗 Correlation Matrix:")
+            print("\n Correlation Matrix:")
             print("-" * 40)
             corr = analyzer.get_correlations()
             print(corr.round(3).to_string())
@@ -184,7 +184,7 @@ def main(args=None):
         # Export report
         if args.output:
             analyzer.export_report(args.output, include_data=args.head > 0)
-            print(f"\n✅ Report saved to: {args.output}")
+            print(f"\n Report saved to: {args.output}")
         
         print("\n" + "=" * 50)
         

@@ -208,8 +208,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Author
 
 **Yasin SARIGÜL**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+- GitHub :  [@theYsnS](https://github.com/theYsnS)
+- LinkedIn: [Yasin SARIGÜL](https://www.linkedin.com/in/sarigulyasin/)
 
 ---
 Star this repo if you find it helpful!

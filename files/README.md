@@ -4,7 +4,6 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen.svg)](tests/)
 
-> **Day 1 of 100 Days of AI/ML Challenge**
 
 A professional-grade CSV analysis tool with data cleaning, statistical analysis, and reporting capabilities.
 
@@ -182,24 +181,7 @@ Numeric Column Summary:
 ==================================================
 ```
 
-## Roadmap
 
-This is **Day 1** of the 100 Days of AI/ML Challenge:
-
-- [x] Day 1: CSV Data Analyzer (You are here!)
-- [ ] Day 2: JSON API Fetcher
-- [ ] Day 3: Data Visualizer
-- [ ] Day 4: Web Scraper
-- [ ] ...
-- [ ] Day 100: Portfolio Website
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ##  License
 
